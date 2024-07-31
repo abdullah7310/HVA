@@ -1,0 +1,27 @@
+nav ul {
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    line-height: 3rem;
+
+}
+nav{
+    background-color: aqua;
+    padding: 10px;
+
+}
+#menu1{
+    font-size: 20px;
+    font-weight: bold;
+}
+nav ul li a::before{
+    content: "*";
+    color: rgb(180, 17, 17);
+    margin-right: 15px;
+}
+ul > li + li{
+    color: rgb(146, 16, 118);
+    /* background-color: rgb(132, 132, 187); */
+}
