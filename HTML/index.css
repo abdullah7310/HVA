@@ -1,0 +1,101 @@
+h1{
+    text-align: center;
+    font-size: 36px;
+    color: rgb(107, 62, 6);
+}
+body{
+    background-color: rgb(241, 229, 194);
+    /* background-image: linear-gradient(120deg,green,brown,red,yellow);
+    background-image: radial-gradient(lightblue,aqua,coral); */
+    background-image: linear-gradient(120deg,rgba(0, 255, 255, 0.411) 600px,rgba(255, 217, 0, 0.37) 10px);
+}
+nav{
+    background-color: antiquewhite;
+    width: 80%;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    background-image: linear-gradient(120deg,rgba(255, 217, 0, 0.37) 433px,rgba(0, 255, 255, 0.411) 10px);
+    align-items: center;
+    justify-content: space-around;
+
+    & .name{
+        width: 40%;
+        
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    & .list{
+        width: 60%;
+        /* border: 1px solid; */
+    }  
+    ul{
+        display: flex;
+        height: 68px;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    } 
+}
+li{
+    display: inline-block;
+
+    
+    & a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 15px;
+        color:  rgb(107, 62, 6);
+        
+    }
+    
+}
+.about-me{
+    height: 300px;
+    width: 700px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    & #about{
+        text-align: center;
+        text-shadow:2px 2px 2px black;
+        color: rgb(134, 233, 233);
+    }
+
+    & p{
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+}
+.myProject{
+    width: 350px;
+    height: 390px;
+    /* border: 2px solid; */
+    margin-top: 10px;
+    border-radius: 18px;
+    /* background-color: rgba(255, 217, 0, 0.37) ; */
+    & #projects{
+        text-align: center;
+        color: rgb(235, 233, 130);
+        text-shadow:2px 2px 2px black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+.contact-me{
+    float: right;
+    color: rgb(107, 62, 6);
+    height: 300px;
+    width: 800px;
+    
+}
+img{
+    border-radius: 50%;
+}
+

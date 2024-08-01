@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Personal Portfolio</title> <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>Welcome to My Portfolio</h1>
     <nav>
-        <ul>
+        <div class="name"><h1>Abdullah</h1></div>
+        <div class="list">
+             <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        </div>
+       
     </nav>
-    <h2 id="about">About Me</h2>
-    <p>HI, My name is Abdullah Ahmad. I am from a beautiful district name Basti,in Uttar Pradesh <br> I have done my 12th i n 2023 by UP Board.</p>
-    <img src="https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" alt="">
+    <div class="about-me">
+   <div class="not-profile"> <h2 id="about"><span>About Me</span></h2>
+    <p>HI, My name is Abdullah Ahmad. I am from a beautiful district name Basti,in Uttar Pradesh <br> I have done my 12th i n 2023 by UP Board.I chose PCM in my intermediate. Now I am pursuing a Web Development Course at Navgurukul  in Dharamshala. I have Completed 10 month here . I have learned C programming language, Basic python, HTML ,CSS and now I'm doing Javascript here. I a enrolled in HyperVerge Academy. Its a bootcamp for full stack developer.</p></div>
+    <div class="profile-image">
+        <img src="https://mrwallpaper.com/images/thumbnail/cool-smiley-profile-picture-6lqzc2aegkuxbini.jpg" alt=""> </div>  </div>
+    <div class="myProject">
     <h2 id="projects">Projects</h2>
     <ul>
         <li>
@@ -30,20 +37,22 @@
         </li>
         <li><h3>Swiggy clone</h3>
         <p>I have made a Swiggy clone by using html and css.</p></li>
-    </ul>
+    </ul></div>
+    <div class="contact-me">
     <h2 id="contact">Contact</h2>
     <form action="#">
         <label for="">Name</label>
          
-        <input type="text" name="name"><br>
+        <input type="text" name="name"><br><br>
         <label for="email">Email</label>
-        <input type="text" name="email" id=""><br>
+        <input type="text" name="email" id=""><br><br>
         <label for="">Message</label>
         <textarea name="Message" row="4" cols="50"></textarea>
-        <br>
+        <br><br>
         <button input="Submit">Submit</button>
         
     </form>
+</div>
 
 </body>
 </html>
