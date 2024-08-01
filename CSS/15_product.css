@@ -1,0 +1,22 @@
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+p{
+    font-style: italic;
+    text-align: justify;
+}
+.detailed{
+    background-color: bisque;
+    line-height: 1.8;
+    font-style: unset;
+}
+dl{
+    background-color: rgba(255, 228, 196, 0.589);
+}
+.heading{
+    background-color: rgba(231, 200, 98, 0.596);
+}
+ul{
+    background-color: rgba(95, 158, 160, 0.233);
+}

@@ -1,0 +1,12 @@
+h2{
+    text-decoration: underline;
+    text-align: center;
+}
+p{
+    line-height: 1.6;
+    color: rgb(28, 8, 100);
+}
+div{
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
