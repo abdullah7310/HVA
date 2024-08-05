@@ -25,4 +25,4 @@ console.log(calculatePaintingCost(3,null,areaOfCircle));
 console.log(calculatePaintingCost(6,8,areaOfTriangle));
 
 
-
+ 
