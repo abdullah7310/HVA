@@ -15,7 +15,7 @@ nav{
     border-radius: 30px;
     margin: auto;
     display: flex;
-    background-image: linear-gradient(120deg,rgba(255, 217, 0, 0.37) 433px,rgba(0, 255, 255, 0.411) 10px);
+    background-image: linear-gradient(120deg,rgba(255, 217, 0, 0.37) 440px,rgba(0, 255, 255, 0.411) 10px);
     align-items: center;
     justify-content: space-around;
 
@@ -57,7 +57,7 @@ li{
     height: 300px;
     width: 700px;
     float: right;
-    margin-right: 100px;
+    margin-right: 20px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -97,5 +97,6 @@ li{
 }
 img{
     border-radius: 50%;
+    margin-left: 50px;
 }
 
