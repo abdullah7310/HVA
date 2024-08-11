@@ -10,15 +10,25 @@
 // }
 // tableFunction(n)
 
-let greet = "namaste";
-function outerGreet(){
-    console.log(greet);
-    let anotherGreet = "namaste babe";
-    function innerGreet(){
-        console.log(anotherGreet);
+// let greet = "namaste";
+// function outerGreet(){
+//     console.log(greet);
+//     let anotherGreet = "namaste babe";
+//     function innerGreet(){
+//         console.log(anotherGreet);
         
-    }
-    innerGreet()
-}
-outerGreet();
+//     }
+//     innerGreet()
+// }
+// outerGreet();
 
+let odd = function (n){
+    console.log((n%2!=0));
+    
+}
+odd(9)
+let even = function(n){
+    console.log(n%2==0);
+    
+}
+even(9)
