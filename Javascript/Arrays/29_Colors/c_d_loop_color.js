@@ -12,8 +12,15 @@ let color = ["red","green","blue","yellow","white"]
 
 // ************************ FOR OF LOOP *************************************
 
-for(let fruit of color){
-    console.log(fruit);
+// for(let fruit of color){
+//     console.log(fruit);
+    
+// }
+// console.log(typeof color);
+// console.log(color.length);
+
+for(let colors of color){
+    console.log(colors);
     
 }
 console.log(typeof color);
