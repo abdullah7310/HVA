@@ -31,3 +31,46 @@ displayProducts()
 addProduct(4,"mobile",600,15,"Electronics")
 console.log("\nUpdated Inventory : ");
 displayProducts()
+
+// SEction e  .....
+
+function updateProduct(id,quantity){
+    let product = inventory.find((el)=>{
+        el.id === id})
+        if(product){
+            product.quantity = quantity
+        }else{
+            console.log(`Product with id ${id} not found`);
+            
+        }
+    
+}
+
+// updateProduct(1, 5); // Updating quantity of Laptop (id: 1) to 5
+// console.log("\nUpdated Inventory after updating quantity using find:");
+// displayProducts();
+
+function updateProductWithMap(id, quantity) {
+    inventory = inventory.map(product => {
+        if (product.id === id) {
+                product.quantity =  quantity
+        }
+        return product;
+    });
+}
+updateProductWithMap(2,28)
+console.log("by using map method");
+
+displayProducts()
+
+
+function removeProduct(id){
+     inventory = inventory.filter((product)=>{
+        return product.id !==id
+    })
+}
+
+console.log("after remove product ");
+
+removeProduct(2)
+displayProducts()
