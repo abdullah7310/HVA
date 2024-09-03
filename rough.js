@@ -94,12 +94,42 @@
 
 
 // Exaample by object>>>>>>>>>>>>>>>>
-let obj= {
-    name:"abdul",
-    class: "10th"
-}
-let obj2 = obj
+// let obj= {
+//     name:"abdul",
+//     class: "10th"
+// }
+// let obj2 = obj
 // console.log(obj2);
 
-console.log(obj);
+// console.log(obj);
 
+// function sum(a,b){
+//     console.log(a+b);
+    
+// }
+
+// setTimeout(()=>{
+//     console.log(3*4);
+    
+// },2000)
+
+// function sum(callback){
+//     callback()
+// }
+// add((2,3)=>{
+//     console.log(2+3);
+    
+// })
+// ******************* "use strict"  ***********************
+// username = "amir"
+// console.log(username);
+
+
+// ****************Do while loop *************
+
+// let i = 0;
+// do {
+//     console.log(i);
+//     i++;
+// } 
+// while (i < 5);
