@@ -1,0 +1,13 @@
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+img{
+    height: 200px;
+
+}
+.first-paragraph{
+    clear: right;
+}
