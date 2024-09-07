@@ -6,7 +6,7 @@ function forEachArray(arr,callback){
 }
 
 let fruit = ["mango","papaya","apple","watermelon"]
-forEachArray(fruit,function(el){
-    console.log(el);
+forEachArray(fruit,function(el,ind){
+    console.log(el,ind);
     
 })

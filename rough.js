@@ -406,3 +406,259 @@
 // topper.greet()
 // console.log(topper)
 
+
+// **************** STUDENT DATA IN OBJECT ************************
+
+// class Student {
+//     constructor(name,email,age,country,city,pincode){
+//         this.name = name;
+//         this.email = email;
+//         this.age = age;
+//         this.address = {
+//             country:country,
+//             city:city,
+//             pincode:pincode
+//         }
+//     }
+//     greet(){
+//         console.log(`Hello ${this.name}!`);
+//     }
+//     getFullAddress(){
+//         console.log(`${this.address.country},${this.address.city}-${this.address.pincode}`);   
+//     }
+// }
+// let abdul = new Student("Abdul","abdul@gmail.com",18,"India","Gorakhpur",27339)
+
+// abdul.greet()
+// abdul.getFullAddress()
+
+//  ***************** EMPLOYEE DATA ***************
+
+// class Employee{
+//     constructor(name,email,age,department,position,salary){
+//         this.name = name;
+//         this.email = email;
+//         this.age = age;
+//         this.department = department;
+//         this.position = position;
+//         this.salary = salary;
+//     }
+//     introduce(){
+//         console.log(`Hello, I am ${this.name},${this.position}`);
+        
+//     }
+//     displaySalary(){
+//         console.log(`Salary:${this.salary}`);
+        
+//     }
+// }
+
+// let newEmployee = new Employee("Abdul","abdul@gmail",19,"Information Technology","Software Developer",2500)
+// // console.log(newEmployee);
+
+// let manager = new Employee("Manager","manager@gmail.com",43,"Info technology","Manager",50000)
+// // console.log(manager);
+// newEmployee.introduce()
+// newEmployee.displaySalary()
+// manager.introduce()
+// manager.displaySalary()
+
+//  *************** BOOK DATA *********************
+
+// class Book{
+//     constructor(title,author,publisher,year,genre){
+//         this.title = title;
+//         this.author = author;
+//         this.publisher = publisher;
+//         this.year = year;
+//         this.genre = genre;
+//     }
+//     describe(){
+//         console.log(`${this.title}-${this.author}(${this.year})`);
+//     }
+//     displayGenre(){
+//         console.log(`Genre:${this.genre}`);
+//     }
+// }
+
+// let sciFiBook = new Book("Dune","Frank Herbert", "Chilton Books",1945,"Science Fiction")
+// let classicBook = new Book("Pride and Prejudice","Jane Austen", "T. Egerton",1813,"Classic")
+
+// console.log(sciFiBook);
+// console.log(classicBook);
+// classicBook.describe()
+// classicBook.displayGenre()
+// sciFiBook.describe()
+// sciFiBook.displayGenre()
+
+
+// $$$$$$$$$$$$$$$$ ARRAYS IN JS $$$$$$$$$$$$$$$444
+
+let colors = ["red","green","blue","black","white"]
+// console.log(colors[0]);
+// console.log(colors[1]="yellow");
+// console.log(colors[colors.length-1]="green");
+
+// *************** For loop ***************
+
+// for(let i = 0;i<colors.length;i++){
+//     console.log(colors[i]);
+// }
+
+// ******************** While loop **********
+
+// let i =0;
+// while(i<colors.length){
+//     console.log(colors[i]);
+//     i++
+// }
+
+//  **************   For of loop ************
+
+// for(color of colors){
+//     console.log(color);
+// }
+// console.log(typeof(colors));
+// console.log(colors.length);
+
+// colors.push("reddish");
+// console.log(colors);
+// colors.pop()
+// console.log("removed color",colors);
+// console.log(colors.indexOf("white"))
+
+// colors.owner = "Abdul"
+// // console.log(colors);
+
+// for(color in colors){
+//     console.log(color+ " => "+colors[color]);
+    
+// }
+
+
+// ******************** Arrays method Foreach,Map,Filter **************
+
+let numbers = [1,2,3,4,5,6,7,8]
+// numbers.forEach(function(number){
+//     console.log(number*2);
+// })
+
+// let squarednumbers = numbers.map(function(number){
+//     return(number*number);
+    
+// })
+// console.log(squarednumbers);
+// let squarednumbers = numbers.map((number)=>{
+//     console.log(number*number);
+// })
+
+// let evenNumbers = numbers.filter(function(number){
+//     return(number%2===0);
+    
+// })
+// console.log(evenNumbers);
+
+// &&&&&&&&&&&&&&&&  MANIPULATING TEMPERATURES  &&&&&&&&&&&&&&&&&&&&&&&&&
+
+// let temperatures = [3,-6,34,45,-10]
+// temperatures.forEach(function(temp){
+//     console.log(temp);
+    
+// })
+// temperatures.forEach((temp)=>{
+//     console.log((temp*9/5)+32);
+// })
+
+// temperatures.forEach(function(temp){
+//     console.log((temp*9/5)+32);
+    
+// })
+
+// ******************* Using Map() ****************
+// tempInFarhenite = temperatures.map(function(temp){
+//     return((temp*9/5)+32);
+// })
+// console.log(tempInFarhenite)
+
+// tempInFarhenite = temperatures.map(function(temp){
+//     return((temp*9/5)+32)
+// })
+// console.log(tempInFarhenite);
+
+// ***************** Using filter ***************88
+
+// let belowFreezing = temperatures.filter(function(temp){
+//     return temp<0
+// })
+// console.log(belowFreezing);
+
+
+// &&&&&&&&&&&&&&&&&&&&   OPERATIONS ON FRUTS   &&&&&&&&&&&&&&&
+
+let fruits = ["apple","banana","cherry","date","papaya"]
+// fruits.forEach(function(fruit){
+//     console.log(fruit.toUpperCase() );
+    
+// })
+
+// fruits.forEach((fruit)=>{
+//     console.log(fruit.charAt(0).toUpperCase()+fruit.slice(1));
+    
+// })
+
+// ************** Calculate the length ********88888
+// let totalCharacters = 0
+// fruits.forEach(function(fruit){
+//     totalCharacters += fruit.length    
+// })
+// console.log(totalCharacters);
+
+// *********   Modified Array using map ***********8
+
+// let reversedFruits = fruits.map(function(fruit){
+//     console.log(fruit.split("").reverse().join(""));
+    
+// })
+// let reversedFruits = fruits.map((fruit)=>{
+//     console.log(fruit.split("").reverse().join(""));
+    
+// })
+
+// **************** using filter ***********
+// let longFruits = fruits.filter(function(fruit){
+//     return fruit.length >5
+// })
+// console.log(longFruits);
+//  let longFruits = fruits.filter((fruit)=>{
+//     return fruit.length>5
+//  })
+//  console.log(longFruits);
+ 
+
+// let aFruitUpper = fruits.filter((fruit)=>{
+//    return fruit.includes('a')
+// }).map((fruit)=>{
+//     return fruit.toUpperCase()
+// })
+// console.log(aFruitUpper);
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&  Custom Array Methods &&&&&&&&&&&&&&
+
+
+function ForEachArray(array,callback){
+    for(let i =0;i<array.length;i++){
+        callback(array[i],i,array)
+    }
+}
+// function forEachArray(arr,callback){
+//     for(let i=0;i<arr.length;i++){
+//         callback(arr[i],i,arr);
+//     }
+
+// }
+
+let fruit = ["mango","papaya","apple","watermelon"]
+ForEachArray(fruit,function(el,ind){
+    console.log(el,ind);
+    
+})
