@@ -595,7 +595,7 @@ let numbers = [1,2,3,4,5,6,7,8]
 
 // &&&&&&&&&&&&&&&&&&&&   OPERATIONS ON FRUTS   &&&&&&&&&&&&&&&
 
-let fruits = ["apple","banana","cherry","date","papaya"]
+// let fruits = ["apple","banana","cherry","date","papaya"]
 // fruits.forEach(function(fruit){
 //     console.log(fruit.toUpperCase() );
     
@@ -645,11 +645,11 @@ let fruits = ["apple","banana","cherry","date","papaya"]
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&  Custom Array Methods &&&&&&&&&&&&&&
 
 
-function ForEachArray(array,callback){
-    for(let i =0;i<array.length;i++){
-        callback(array[i],i,array)
-    }
-}
+// function ForEachArray(array,callback){
+//     for(let i =0;i<array.length;i++){
+//         callback(array[i],i,array)
+//     }
+// }
 // function forEachArray(arr,callback){
 //     for(let i=0;i<arr.length;i++){
 //         callback(arr[i],i,arr);
@@ -657,8 +657,16 @@ function ForEachArray(array,callback){
 
 // }
 
-let fruit = ["mango","papaya","apple","watermelon"]
-ForEachArray(fruit,function(el,ind){
-    console.log(el,ind);
+// let fruit = ["mango","papaya","apple","watermelon"]
+// ForEachArray(fruit,function(el,ind){
+//     console.log(el,ind);
     
-})
+// })
+
+let arr = [1,2,32,7]
+let narr= [...arr]
+console.log(narr);
+let join =[...arr,...narr];
+console.log(join);
+
+

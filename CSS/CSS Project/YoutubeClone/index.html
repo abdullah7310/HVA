@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flexx">
+        <div class="left">
+
+            <label for="check" class="labeling"><img class="bars" src="images/barr.svg.svg" alt=""></label>
+            <img class="ytImage" src="youtube-removebg-preview.png" alt=""> <sup class="superscript">IN</sup>
+            </a>
+        </div>
+        <div class="middle">
+            <div class="middle-div" class="search-box">
+                <input placeholder="Search" type="search">
+
+
+            </div>
+            <div class="search-icon flex">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="voice-box flex"><i class="fa-solid fa-microphone"></i></div>
+        </div>
+        <div class="right flex">
+            <div class="right-icons ">
+                <img class="create-vid" src="images/create-video.png" alt="">
+                <i class="fa-regular fa-bell"></i>
+                <div class="myImage flex"><img src="images/my photo .jpg" alt=""></div>
+
+            </div>
+        </div>
+    </nav>
+    
+    <nav class="sidebar">
+        <div class="menu flex">
+            <i class="fa-solid fa-house"></i>
+            <p class="home">Home</p>
+            <img class="short-video" src="images/shortvideoIcon-removebg-preview.png" alt="">
+            <p class="shorts">Shorts</p>
+            <img src="images/library.svg.svg" alt="">
+            <p class="subs">Subscriptions</p>
+            <img src="images/you.svg.svg" alt="">
+            <p class="you">You</p>
+        </div>
+    </nav>
+    
+    <input  type="checkbox" id="check">
+     <!-- <input type="radio" for="checking"> -->
+    
+    <section class="sidebar-menu flex">
+        <div class="insider">
+            <div class="flex-div">
+                <div class="icon"><i id="home-button" class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Home</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img class="short-video" src="images/shortvideoIcon-removebg-preview.png" alt="">
+                </div>
+                <div class="icon-name">Shorts</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">Subscriptions</div>
+            </div>
+
+            <hr>
+            <!-- <div class="flex-div"><div><h2>You</h2>/div> -->
+            <div class="flex-div">
+                <h2>You</h2>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Your channel</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img class="short-video" src="images/shortvideoIcon-removebg-preview.png" alt="">
+                </div>
+                <div class="icon-name">History</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">Playlists</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Your videos</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img class="short-video" src="images/shortvideoIcon-removebg-preview.png" alt="">
+                </div>
+                <div class="icon-name">Watch later</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">Liked videos</div>
+            </div>
+
+            <hr>
+            <div class="flex-div">
+                <h2>Explore</h2>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Trending</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img class="short-video" src="images/shortvideoIcon-removebg-preview.png" alt="">
+                </div>
+                <div class="icon-name">Shopping</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">Movies</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Live</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img class="short-video" src="images/shortvideoIcon-removebg-preview.png" alt="">
+                </div>
+                <div class="icon-name">Gaming</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">News</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">Sports</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">Courses</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">Fashion & beauty</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">Podcasts</div>
+            </div>
+
+            <hr>
+
+            <div class="flex-div">
+                <h2>More from YouTube</h2>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">YouTube Premium</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img class="short-video" src="images/shortvideoIcon-removebg-preview.png" alt="">
+                </div>
+                <div class="icon-name">YouTube Studio</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><img src="images/library.svg.svg" alt=""></div>
+                <div class="icon-name">YouTube Music</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">YouTube Kids</div>
+            </div>
+            <hr>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Settings</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Report history</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Help</div>
+            </div>
+            <div class="flex-div">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-name">Send feedback</div>
+            </div>
+            <hr>
+            <div class="flex-div-footer">
+                
+                <div class="icon-name"><p>About Press Copyright Contact us Creators Advertise Developers</p></div>
+            </div>
+            <div class="flex-div-footer">
+                
+                <div class="icon-name"><p>Terms Privacy Policy & Safety How YouTube works Test new features</p></div>
+            </div>
+            <div class="flex-div-footer">
+                
+                <div class="icon-name"><p class="Copyright-text">© 2024 Google LLC</p></div>
+            </div>
+            
+
+
+
+        </div>
+    </section>
+
+  
+        <div class="second-header flex">
+            <ul type="none" class="flexx">
+                <li>All</li>
+                <li>Music</li>
+                <li>Movie musicals</li>
+                <li>Yo Yo Honey Singh</li>
+                <li>Indian Pop Music</li>
+                <li>Live</li>
+                <li>Comedy</li>
+                <li>Web development</li>
+                <li>Gaming</li>
+                <li>Nushrat Fateh Ali Khan</li>
+                <li>Mixes</li>
+                <li>Ghazal</li>
+                <li>Jukebox</li>
+                <li>Data Structure</li>
+                <li>Dramedy</li>
+                <li>Soul Music</li>
+                <li>Recently Uploaded</li>
+                <li>Watched</li>
+                <li>New to you</li>
+            </ul>
+        </div>
+    
+    
+    <section class="grid-wrapper">
+        <div class="grid">
+            <div class="col-grid-1"><img src="images/thumbnail3.png" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/Jack.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon (Official Video)asdfghjasdfghjksdfghjklsdffgh</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON<img src="images/music.svg.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-grid-1"><img src="images/thumbnail1.png" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/Jack.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON<img src="images/music.svg.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-grid-1"><img src="images/thumbnail2.png" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/Jack.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON<img src="images/music.svg.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-grid-1"><img src="images/thumbnail4.png" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/Jack.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON<img src="images/music.svg.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-grid-1"><img src="images/thumbnail5.png" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/Jack.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON<img src="images/music.svg.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-grid-1"><img src="images/thumbnail6.png" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/Jack.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON<img src="images/music.svg.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-grid-1"><img src="images/thumbnail7.png" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/Jack.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON<img src="images/music.svg.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-grid-1"><img src="images/thumbnail8.png" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/Jack.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON<img src="images/music.svg.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
