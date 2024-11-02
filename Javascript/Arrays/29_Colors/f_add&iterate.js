@@ -7,5 +7,4 @@ console.log(color);
 // }
 for(let colors in color){
     console.log(colors + ":" +color[colors]);
-    
 }

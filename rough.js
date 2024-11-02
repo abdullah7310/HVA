@@ -663,10 +663,133 @@ let numbers = [1,2,3,4,5,6,7,8]
     
 // })
 
-let arr = [1,2,32,7]
-let narr= [...arr]
-console.log(narr);
-let join =[...arr,...narr];
-console.log(join);
+// ***************************       Creating objects ******************************************
 
+
+// let student = {
+//     name:"abdul",
+//     class: 8,
+//     age:23,
+//     greet(){
+//         console.log("hello " + this.name);
+        
+//     }
+// }
+// student.greet()
+// let newName = student.name
+// student.name = "abdullah"
+
+// delete student.age;
+// console.log(student);
+
+//  ************************* second methods *******************************************88
+// let student = new Object()
+// student.name = 'abdul'
+// student.age = 23
+// student.greet = function (name){
+//     console.log("hello " + this.name);
+    
+// }
+// console.log(student);
+// student.greet()
+
+// ************************ 3rd method ********************************************
+
+// function Student(name,age){
+//     this.name = name
+//     this.age = age
+// }
+// let newStudent = new Student("abdullah",23)
+// console.log(newStudent);
+
+// let arr = ["mango","apple"]
+// for(array in arr){
+//     console.log(arr[array]);
+    
+// }
+
+// let student = {
+//     name: "abdul",
+//     class: "7th",
+//     board: "hindi-medium"
+// }
+// for(id of student){
+//     console.log(id);
+    
+// }
+
+// function greet(){
+//     return `hello`
+// }
+// function greetUser(greet,name){
+//     console.log();
+    
+// }
+
+// console.log(greetUser())
+
+// setTimeout(function(){
+//     console.log("hello user");
+    
+// },2000)
+
+// function greet(){
+//     console.log("hello user");
+    
+// }
+
+
+
+// let student = {
+//     age:23,
+//     name :"abdul",
+//     example(){
+//         console.log(this.name);
+        
+//     },
+//     greet: ()=>{
+//         console.log(this.name);
+        
+//     }
+// }
+
+// student.example()
+// student.greet()
+
+// let arr = [1,2,3,5]
+// arr[10]= 9
+
+// let obj = arr.keys()
+// console.log(obj);
+// for(const keys of obj){
+//     console.log(keys);
+    
+// }
+
+// Create a pyramid of numbers consisting of a given number of lines. For example, if the given number is 5, then we should see the following:
+// 1
+// 1 2 1
+// 1 2 3 2 1
+// 1 2 3 4 3 2 1
+// 1 2 3 4 5 4 3 2 1
+
+// const prompt = require('readline-sync')
+// let n = prompt.questionInt(("enter the n >> "))
+// let k;
+// for(let i = 0;i<n;i++){
+//     k = "";
+//   for(let j = 1;j<=i;j++){
+//     k += j
+//   }
+//   console.log(k);
+  
+// }
+
+let person = {
+  name:"Abdul",
+  9:"yes"
+}
+console.log(person.name);
+console.log(person[9]);
+console.log(person["9"]);
 

@@ -8,11 +8,13 @@ let topper = {
         city:"Mumbai"
     },
     greet:function(){
-        return `Hello,${this.name}`
+        console.log( `Hello,${this.name} ,`)
+        console.log( `${this.address.country}`);
+        
     }
 }
-console.log(topper.greet())
-console.log(topper);
+topper.greet()
+// console.log(topper);
 
 
 

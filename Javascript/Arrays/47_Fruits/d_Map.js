@@ -8,6 +8,6 @@ let fruits = ["apple", "banana", "cherry", "date"];
 // console.log(reversedFruits);
 
 let reversedFruits= fruits.map((fruit)=>{
-    return(fruit.split("").reverse().join(""))
+    return(fruit.split("").reverse().join(""));
 })
 console.log(reversedFruits);

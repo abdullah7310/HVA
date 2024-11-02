@@ -1,4 +1,4 @@
-h1{
+/* h1{
     font-size: 50px;
     color:blueviolet;
 }
@@ -14,4 +14,44 @@ p{
     border: 2px solid black;
     border-radius: 30px ;
     width: 200px;
+} */
+
+
+.product-card{
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    box-sizing: border-box;
+    height: auto;
+    background-color:bisque;
+}
+p{
+    padding: 10px;
+    font-size: 16px ;
+    line-height: 1.5;
+}
+div.product-card h3{
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+span{
+    padding: 10px;
+    font-size: 20px;
+    color: #ff0000;
+}
+button[type="button"]{
+    padding: 10px;
+    padding: 8px;
+    border: 2px solid  black;
+    background-color: cadetblue;
+    color: white;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+li:hover{
+    background-color: aqua;
 }
