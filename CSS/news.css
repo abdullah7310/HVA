@@ -1,12 +1,24 @@
-h2{
-    text-decoration: underline;
-    text-align: center;
+h1{
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+}
+.article-container{
+    background-color:#f9f3e4;
+    text-align: justify;
+    padding: 20px;
+}
+.article-meta{
+    color:rgb(155, 153, 153);
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 14px;
 }
 p{
+    font-size: 18px;
     line-height: 1.6;
-    color: rgb(28, 8, 100);
 }
-div{
-    background-color: antiquewhite;
-    font-family: 'Times New Roman', Times, serif;
+body{
+    font-family:Georgia, serif ;
 }

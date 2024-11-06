@@ -538,7 +538,7 @@ let colors = ["red","green","blue","black","white"]
 
 // ******************** Arrays method Foreach,Map,Filter **************
 
-let numbers = [1,2,3,4,5,6,7,8]
+// let numbers = [1,2,3,4,5,6,7,8]
 // numbers.forEach(function(number){
 //     console.log(number*2);
 // })
@@ -792,4 +792,3 @@ let person = {
 console.log(person.name);
 console.log(person[9]);
 console.log(person["9"]);
-
