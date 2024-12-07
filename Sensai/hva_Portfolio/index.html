@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Abdullah</a>
+        <label for="menubtn">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </label>
+        <input type="checkbox" id="menubtn">
+        <nav class="navbar">
+            <label for="menubtn">
+                <i class='bx bx-x' id="menu-icon"></i>
+            </label>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Abdullah Ahmad</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>Passionate about creating seamless web experiences. Focused on improving user interfaces and user experiences.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img class="my-photo" src="image/my-photo.jpg" alt="Abdullah Ahmad">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img class="my-pic" src="image/my-photo.jpg" alt="Abdullah Ahmad">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer!</h3>
+            <p>Hello, I'm Abdullah, a passionate frontend developer. I specialize in creating interactive and visually appealing websites. I believe in the importance of responsive design and clean code.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Adobe XD, Wireframing</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Photoshop, Illustrator, Branding</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="image/blackYoutube.png" alt="Project 1">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>UI/UX design for YouTube clone</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image/whiteYoutube.png" alt="Project 2">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Frontend development for a responsive YouTube clone</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" required>
+                <input type="text" placeholder="Subject" required>
+            </div>
+            <textarea placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2023 Abdullah Ahmad | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+</body>
+</html>

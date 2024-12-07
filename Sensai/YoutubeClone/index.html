@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.icons8.com/color/240/youtube-play.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <nav class="header flexx">
+        <div class="left">
+            <label for="check" class="labeling"><img class="bars" src="images/barr.svg" alt=""></label>
+            <img class="ytImage" src="youtube-removebg-preview.png" alt=""> <sup class="superscript">IN</sup>
+        </div>
+        <div class="middle">
+            <div class="middle-div search-box">
+                <input placeholder="Search" type="search">
+            </div>
+            <div class="search-icon flex">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="voice-box flex"><i class="fa-solid fa-microphone"></i></div>
+        </div>
+        <div class="right flex">
+            <div class="right-icons">
+                <img class="create-vid" src="images/create-video.png" alt="">
+                <i class="fa-regular fa-bell"></i>
+                <div class="myImage flex"><img src="images/myphoto.jpg" alt=""></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Section -->
+    <input type="checkbox" id="check">
+    <nav class="sidebar">
+        <div class="menu flex">
+            <i class="fa-solid fa-house"></i>
+            <p class="home">Home</p>
+            <img class="short-video" src="images/shortvideoIcon.png" alt="">
+            <p class="shorts">Shorts</p>
+            <img src="images/library.svg" alt="">
+            <p class="subs">Subscriptions</p>
+            <img src="images/you.svg" alt="">
+            <p class="you">You</p>
+        </div>
+    </nav>
+
+    <!-- Collapsible Sidebar Menu -->
+    <section class="sidebar-menu flex">
+        <div class="insider">
+            <!-- Extended sidebar content -->
+        </div>
+    </section>
+
+    <!-- Secondary Header for Filter Tabs -->
+    <div class="second-header flex">
+        <ul class="flexx">
+            <li>All</li>
+            <li>Music</li>
+            <li>Movie musicals</li>
+            <li>Yo Yo Honey Singh</li>
+            <li>Indian Pop Music</li>
+            <li>Live</li>
+            <li>Comedy</li>
+            <li>Web development</li>
+            <li>Gaming</li>
+            <li>Mixes</li>
+            <li>Recently Uploaded</li>
+            <li>New to you</li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <section class="grid-wrapper">
+        <div class="grid">
+            <div class="col-grid-1"><img src="image/thumbnail1.webp" alt=""></div>
+            <div class="col-grid">
+                <div class="row-1"><img src="images/channel1.png" alt=""></div>
+                <div class="row-middle">
+                    <div class="title">
+                        <p>Old Money - AP Dhillon (Official Video)</p>
+                    </div>
+                    <div class="channel-name flex">APDHILLON <img src="images/music.svg" alt=""></div>
+                    <div class="views flex"><span>14M views </span><i class="fa-solid fa-circle"></i><span>14 days
+                            ago</span></div>
+                </div>
+                <i id="three-dot" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <!-- Additional grid items -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-links">
+            <p>About Press Copyright Contact us Creators Advertise Developers</p>
+            <p>Terms Privacy Policy & Safety How YouTube works Test new features</p>
+            <p class="copyright-text">© 2024 Google LLC</p>
+        </div>
+    </footer>
+</body>
+
+</html>

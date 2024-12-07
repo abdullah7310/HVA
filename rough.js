@@ -785,10 +785,19 @@ let colors = ["red","green","blue","black","white"]
   
 // }
 
-let person = {
-  name:"Abdul",
-  9:"yes"
+// let person = {
+//   name:"Abdul",
+//   9:"yes"
+// }
+// console.log(person.name);
+// console.log(person[9]);
+// console.log(person["9"]);
+// var a = 20
+
+
+function sum(){
+  var a = 5
+  var b = 10
+  return a+b;
 }
-console.log(person.name);
-console.log(person[9]);
-console.log(person["9"]);
+console.log(sum());

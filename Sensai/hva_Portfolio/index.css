@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.home-img img {
+    width: 35vw;
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Portfolio */
+.portfolio-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.portfolio-box {
+    position: relative;
+    width: 30%;
+}
+
+.portfolio-box img {
+    width: 100%;
+}
+
+.portfolio-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    opacity: 1;
+}
+
+.portfolio-layer h4,
+.portfolio-layer p {
+    color: #fff;
+    text-align: center;
+}
+
+/* Contact */
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    background: #fff;
+    border-radius: 8px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Footer */
+.footer {
+    padding: 3rem 9%;
+    text-align: center;
+    background-color: #0ef;
+}
+
+.footer-iconTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .navbar a {
+        font-size: 1.4rem;
+    }
+
+    .home-img img {
+        width: 50vw;
+    }
+
+    .about-img img {
+        width: 50vw;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Area Selection with Saved Coordinates</title>
+  <style>
+    #canvas-container {
+      position: relative;
+      display: inline-block;
+    }
+    #selection-box {
+      border: 2px dashed #00f;
+      position: absolute;
+      pointer-events: none;
+      display: none;
+    }
+    #saved-coordinates {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Select an Area on the Image and Label It</h2>
+<input type="file" id="image-upload" accept="image/*"><br><br>
+<div id="canvas-container">
+  <canvas id="canvas"></canvas>
+  <div id="selection-box"></div>
+</div>
+<br>
+<label for="label">Enter Label (e.g., Name, Address, DOB): </label>
+<input type="text" id="label">
+<button onclick="saveSelection()">Save Selection</button>
+
+<div id="saved-coordinates">
+  <h3>Saved Selections:</h3>
+  <ul id="coordinate-list"></ul>
+</div>
+
+<script>
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  const selectionBox = document.getElementById('selection-box');
+  let startX, startY, endX, endY;
+  let isSelecting = false;
+  let selections = []; // Array to store all selections
+
+  // Image upload and rendering
+  document.getElementById('image-upload').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    const img = new Image();
+    img.onload = () => {
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img, 0, 0);
+    };
+    img.src = URL.createObjectURL(file);
+  });
+
+  // Mouse down event to start selection
+  canvas.addEventListener('mousedown', (e) => {
+    startX = e.offsetX;
+    startY = e.offsetY;
+    isSelecting = true;
+    selectionBox.style.display = 'block';
+    selectionBox.style.left = `${startX}px`;
+    selectionBox.style.top = `${startY}px`;
+    selectionBox.style.width = '0px';
+    selectionBox.style.height = '0px';
+  });
+
+  // Mouse move event to update selection box
+  canvas.addEventListener('mousemove', (e) => {
+    if (isSelecting) {
+      endX = e.offsetX;
+      endY = e.offsetY;
+      const width = endX - startX;
+      const height = endY - startY;
+      selectionBox.style.width = `${Math.abs(width)}px`;
+      selectionBox.style.height = `${Math.abs(height)}px`;
+      selectionBox.style.left = `${Math.min(startX, endX)}px`;
+      selectionBox.style.top = `${Math.min(startY, endY)}px`;
+    }
+  });
+
+  // Mouse up event to end selection
+  canvas.addEventListener('mouseup', () => {
+    isSelecting = false;
+    selectionBox.style.display = 'none';
+  });
+
+  // Save selection with label
+  function saveSelection() {
+    const label = document.getElementById('label').value.trim();
+    if (label === '') {
+      alert("Please enter a label for the selected area.");
+      return;
+    }
+
+    // Creating the selection object
+    const rect = {
+      label: label,
+      x: Math.min(startX, endX),
+      y: Math.min(startY, endY),
+      width: Math.abs(endX - startX),
+      height: Math.abs(endY - startY)
+    };
+
+    selections.push(rect); // Save the selection to the array
+    localStorage.setItem('selections', JSON.stringify(selections)); // Save to localStorage
+    displaySelections();
+    document.getElementById('label').value = ''; // Clear label input
+  }
+
+  // Display saved selections
+  function displaySelections() {
+    const list = document.getElementById('coordinate-list');
+    list.innerHTML = ''; // Clear previous list
+    selections.forEach((selection) => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${selection.label}: { x: ${selection.x}, y: ${selection.y}, width: ${selection.width}, height: ${selection.height} }`;
+      list.appendChild(listItem);
+    });
+  }
+
+  // Load selections from local storage on page load
+  function loadSelections() {
+    const savedData = localStorage.getItem('selections');
+    if (savedData) {
+      selections = JSON.parse(savedData); // Load saved selections
+      displaySelections();
+    }
+  }
+
+  // Load selections on page load
+  window.onload = loadSelections;
+</script>
+
+</body>
+</html>
